@@ -1,0 +1,14 @@
+{
+    "name": "remoteCommand",
+    "description": "Remote command",
+    "version": "0.0.1",
+    "author": {
+        "name": [
+            "tomatowang@qnqp.com"
+        ]
+    },
+    "engines": {
+        "node": ">=4.6.0"
+    },
+    "main": "remoteCommand.js"
+}

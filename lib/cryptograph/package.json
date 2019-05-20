@@ -1,0 +1,14 @@
+{
+  "name": "cryptograph",
+  "description": "An cryptograph library to encrypt/decrypt text",
+  "version": "0.0.1",
+  "author": {
+    "name": [
+      "jasonxlin@qnqp.com"
+    ]
+  },
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "main": "cryptograph.js"
+}

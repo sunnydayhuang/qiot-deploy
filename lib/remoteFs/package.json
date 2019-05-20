@@ -1,0 +1,14 @@
+{
+  "name": "remoteFs",
+  "description": "Remote File manipulation",
+  "version": "0.0.1",
+  "author": {
+    "name": [
+      "jasonxlin@qnqp.com"
+    ]
+  },
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "main": "remoteFs.js"
+}

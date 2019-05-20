@@ -1,0 +1,57 @@
+{
+  "appenders": {
+    "access": {
+      "type": "dateFile",
+      "filename": "log/access",
+      "pattern": "-yyyyMMdd.log",
+      "alwaysIncludePattern": true,
+      "backups": 5
+    },
+    "stdout": {
+      "type": "stdout",
+      "layout": {
+        "type": "basic"
+      }
+    },     
+    "console": {
+      "type": "dateFile",
+      "filename": "log/system",
+      "pattern": "-yyyyMMdd.log",
+      "alwaysIncludePattern": true,
+      "backups": 5
+    },
+    "app": {
+      "type": "dateFile",
+      "filename": "log/app",
+      "pattern": "-yyyyMMdd.log",
+      "alwaysIncludePattern": true,
+      "backups": 5        
+    },
+    "errorFile": {
+      "type": "dateFile",
+      "filename": "log/error",
+      "pattern": "-yyyyMMdd.log",
+      "alwaysIncludePattern": true,
+      "backups": 5                  
+    },    
+    "error": { 
+      "type": "logLevelFilter",
+      "appender": "errorFile",
+      "level": "error"
+    }
+  },
+  "categories": {
+    "http": {
+      "appenders": ["access"],
+      "level": "INFO"
+    },
+    "console": {
+      "appenders": ["console", "stdout"],
+      "level": "INFO"
+    },
+    "default": {
+      "appenders": ["app", "error", "stdout"],
+      "level": "DEBUG"
+    }
+  }
+}

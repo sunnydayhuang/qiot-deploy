@@ -1,0 +1,14 @@
+{
+  "name": "zipper",
+  "description": "Zip file",
+  "version": "0.0.1",
+  "author": {
+    "name": [
+      "jasonxlin@qnqp.com"
+    ]
+  },
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "main": "zipper.js"
+}

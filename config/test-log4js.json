@@ -1,0 +1,29 @@
+{
+  "appenders": {
+    "app": {
+      "type": "dateFile",
+      "filename": "log/app",
+      "pattern": "-yyyyMMdd.log",
+      "alwaysIncludePattern": true,
+      "backups": 5        
+    },
+    "errorFile": {
+      "type": "dateFile",
+      "filename": "log/error",
+      "pattern": "-yyyyMMdd.log",
+      "alwaysIncludePattern": true,
+      "backups": 5                  
+    },    
+    "error": { 
+      "type": "logLevelFilter",
+      "appender": "errorFile",
+      "level": "error"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": ["app", "error"],
+      "level": "DEBUG"
+    }
+  }
+}

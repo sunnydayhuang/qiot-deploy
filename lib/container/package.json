@@ -1,0 +1,14 @@
+{
+  "name": "container",
+  "description": "Container manager",
+  "version": "0.0.1",
+  "author": {
+    "name": [
+      "jasonxlin@qnqp.com"
+    ]
+  },
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "main": "container.js"
+}
